@@ -1,0 +1,233 @@
+/* start  global css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* small  */
+@media(min-width: 768px) {
+    .container {
+        width: 750px
+    }
+}
+/* medium  */
+@media(min-width: 992px) {
+    .container {
+        width: 970px
+    }
+}
+/* large  */
+@media(min-width: 1200px) {
+    .container {
+        width: 1170px
+    }
+}
+/* end  global css */
+/* start nav  */
+.nav {
+    padding: 20px 200px 
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 400;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    padding-left: 200px ;
+    padding-right: 200px ;
+}
+nav .logo ul {
+    list-style: none;
+    display: none;
+    position:fixed;
+    top: 0%;
+    left: 0%;
+    background-color: white;
+   
+    width: 25%;
+    height: 100%;
+}
+nav .logo:hover ul {
+    
+    display: block;
+}
+nav .logo ul li:hover {
+    
+    background-color: #999;
+}
+nav .logo ul li {
+    padding:  25px;
+    text-transform: capitalize;
+}
+
+
+@media(max-width: 767px) {
+    .nav {
+       padding:  10px 50px 100px;
+    }
+    nav {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    nav .logo ul {
+        width: 40%;
+        height: 100%;
+    }
+}
+/* end nav  */
+/* :start header  */
+.header {
+padding: 50px 0;
+}
+.header .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px 20px
+}
+.header .container .box {
+    text-align: center;
+}
+.header .container .box img {
+    max-width: 100%;
+}
+.header .container .box h3 {
+padding-top: 10px;
+padding-bottom: 20px;
+font-weight: normal;
+font-size: 24px;
+line-height: 1.6;
+}
+.header .container .box p { 
+    font-size: 16px;
+    line-height: 1.6;
+
+}
+.header .number {
+    padding-top: 50px ;
+    text-align: center;
+}
+.header .number span {
+    display: inline-block;
+    padding:  15px;
+    margin: -3px;
+}
+.header .number span.active {
+    background-color: black;
+    color: white;
+}
+.header .number span:hover { 
+background-color: black;
+color: white;
+}
+/* end header  */
+/* start about */
+.about {
+    padding: 50px 0;
+    text-align: center;
+}
+.about .container .img img {
+    max-width: 100%;
+}
+.about .container h3 {
+    padding-bottom: 50px ;
+    font-weight: normal;
+}
+.about .container h4 {
+    padding: 30px  0 0 15px;
+}
+.about .container p {
+    padding: 10px ;
+    font-size: 16px;
+    line-height: 1.7;
+}
+/*end about */
+/* start footer  */
+.footer {
+    padding: 50px 0;
+}
+.footer .container{
+    display: flex;
+    justify-content: space-between;
+}
+@media(max-width: 767px) {
+    .footer .container{
+        display: flex; 
+        flex-direction: column;
+    }
+}
+.footer .container .box-1 { 
+flex-basis: 30%
+
+}
+.footer .container .box-1 h4 { 
+    padding: 20px 0;
+    font-weight: normal;
+    font-size: 23px;
+}
+.footer .container .box-1 p { 
+    line-height: 1.6;
+    font-size: 17px;
+}
+.footer .container .box-2 { 
+    flex-basis: 30%
+}
+.footer .container .box-2 h4 { 
+    padding: 20px 0;
+    font-weight: normal;
+    font-size: 23px;
+}
+.footer .container .box-2 .post img { 
+    max-width: 100%;
+    width: 30%;
+} 
+.footer .container .box-2 .post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   padding: 10px 0;
+}
+.footer .container .box-2 .post .text p {
+    padding-bottom: 10px ;
+    font-size: 16px;
+}
+.footer .container .box-3 { 
+    flex-basis: 30%
+}
+
+.footer .container .box-3 .tags {
+    display: flex;
+    flex-wrap: wrap
+}
+.footer .container .box-3 h4 { 
+    padding: 20px 0;
+    font-weight: normal;
+    font-size: 23px;
+}
+.footer .container .box-3 p{ 
+    font-weight: normal;
+    font-size: 13px;
+    padding: 4px 8px;
+    margin: 10px 2px;
+    background-color: #999;
+    color: #eee;
+}
+.footer .container .box-3 p.active{ 
+    background-color: black;
+} 
+/* end footer  */
